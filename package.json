@@ -1,0 +1,29 @@
+{
+  "name": "09-app-colas-tickets",
+  "version": "1.0.0",
+  "description": "Aplicacion para crear colas de tockets con node js y socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juan9507/app-colas-tickets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  },
+  "bugs": {
+    "url": "https://github.com/Juan9507/app-colas-tickets/issues"
+  },
+  "homepage": "https://github.com/Juan9507/app-colas-tickets#readme"
+}
