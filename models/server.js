@@ -8,7 +8,9 @@ class Server {
     constructor() {
         this.app    = express();
         this.port   = process.env.PORT;
+        // crear servidor con socket
         this.server = require('http').createServer( this.app );
+        // Toda la informacion de los clientes conectados
         this.io     = require('socket.io')( this.server );
 
         this.paths = {};
@@ -19,7 +21,7 @@ class Server {
         // Rutas de mi aplicación
         this.routes();
 
-        // Sockets
+        // Eventos de Sockets
         this.sockets();
     }
 
@@ -45,6 +47,7 @@ class Server {
 
     }
 
+    // Levantar el server de sockets.io
     listen() {
         this.server.listen( this.port, () => {
             console.log('Servidor corriendo en puerto', this.port );

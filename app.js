@@ -5,6 +5,8 @@ const Server = require('./models/server');
 
 const server = new Server();
 
+global.io = server.io
+
 
 
 server.listen();
